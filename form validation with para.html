@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input type="text" id="nm" onblur="validateform(nm,nameerr)">
+    <span id="nameerr"></span>
+    <br><br>
+
+   Mobile:  <input type="mobile" id="mb" onblur="validateform(mb,mberr)">
+    <span id="mberr"></span>
+
+
+    <br><br>
+
+</body>
+<script>
+
+function validateform(n,spid)
+{
+    if(n.value== "")
+    {
+          spid.innerHTML="Required...";
+          spid.style.color="red";
+          n.style.border="2px solid lightblue";
+    } 
+
+
+
+     else
+    {
+        spid.innerHTML="";
+        n.style.border="10px solid  green"
+    }
+
+}
+    
+</script>
+</html>

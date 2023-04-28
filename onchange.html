@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange</title>
+</head>
+<body>
+
+
+Price: <input type="text" value="200" id="p">
+
+<select name="" id="s" onchange="getPrice()">
+
+ <option hidden>-----Select Option-----</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+
+</select>
+
+<h3 id="res"></h3>
+
+
+<script>
+
+    inp = document.getElementById=('p');
+   sel =  document.getElementById=('s');
+   h3 = document.getElementById=('res');
+
+    function getPrice()
+    {
+        h3.innerHTML = (inp.value * sel.value)
+
+    }
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
